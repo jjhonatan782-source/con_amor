@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Para mi amor Nayda 💜</title>
+<style>
+*{box-sizing:border-box}
+body{
+ margin:0;min-height:100vh;overflow-x:hidden;
+ background:radial-gradient(ellipse at bottom,#35105c,#10051e 65%,#05020c);
+ color:white;font-family:Georgia,serif;text-align:center;
+}
+.stars{position:fixed;inset:0;pointer-events:none;overflow:hidden}
+.star{position:absolute;background:white;border-radius:50%;
+ animation:twinkle 2s infinite alternate}
+@keyframes twinkle{to{opacity:.15;transform:scale(.5)}}
+main{position:relative;z-index:1;padding:35px 18px 55px}
+h1{color:#f1d7ff;font-size:clamp(30px,8vw,44px);
+ text-shadow:0 0 20px #c05bff}
+p{line-height:1.8}
+.intro{color:#e9d7ff;font-size:17px}
+.garden{height:280px;display:flex;justify-content:center;
+ align-items:center;gap:15px;overflow:hidden}
+.flower{position:relative;width:100px;height:220px;
+ animation:sway 3s ease-in-out infinite alternate;transform-origin:bottom}
+.flower:nth-child(2){transform:scale(1.15);animation-delay:-1s}
+.flower:nth-child(3){animation-delay:-2s}
+.stem{position:absolute;bottom:0;left:49px;width:4px;height:125px;
+ background:linear-gradient(#8ce59c,#236c44);border-radius:5px}
+.leaf{position:absolute;bottom:55px;left:50px;width:32px;height:15px;
+ background:#55bd75;border-radius:100% 0 100% 0;transform:rotate(-25deg)}
+.bloom{position:absolute;top:28px;left:15px;width:70px;height:70px;
+ animation:breathe 3s infinite alternate}
+.petal{position:absolute;left:24px;top:0;width:23px;height:39px;
+ border-radius:60% 60% 45% 45%;
+ background:linear-gradient(#f6c7ff,#ac43f1 65%,#7622bd);
+ transform-origin:11px 35px;box-shadow:0 0 12px #d77cff88}
+.petal:nth-child(1){transform:rotate(0deg) translateY(-7px)}
+.petal:nth-child(2){transform:rotate(45deg) translateY(-7px)}
+.petal:nth-child(3){transform:rotate(90deg) translateY(-7px)}
+.petal:nth-child(4){transform:rotate(135deg) translateY(-7px)}
+.petal:nth-child(5){transform:rotate(180deg) translateY(-7px)}
+.petal:nth-child(6){transform:rotate(225deg) translateY(-7px)}
+.petal:nth-child(7){transform:rotate(270deg) translateY(-7px)}
+.petal:nth-child(8){transform:rotate(315deg) translateY(-7px)}
+.center{position:absolute;left:30px;top:27px;width:20px;height:20px;
+ background:#ffe5a1;border-radius:50%;box-shadow:0 0 15px #ffe5a1}
+@keyframes sway{from{rotate:-5deg}to{rotate:5deg}}
+@keyframes breathe{to{filter:brightness(1.4);transform:scale(1.08)}}
+.card{max-width:450px;margin:10px auto;padding:22px;
+ background:#ffffff0e;border:1px solid #d9a4ff66;
+ border-radius:20px;box-shadow:0 0 25px #a43bea20}
+button{border:0;border-radius:30px;padding:14px 21px;
+ margin:7px;background:linear-gradient(100deg,#a33de1,#e36cbf);
+ color:white;font-size:15px;font-weight:bold;cursor:pointer}
+button:active{transform:scale(.97)}
+#letter{display:none;text-align:left;white-space:pre-line;
+ color:#f7eaff;line-height:1.9}
+.heart{font-size:28px;animation:twinkle 1.2s infinite alternate}
+footer{color:#cbb1df;font-size:13px;margin-top:30px}
+</style>
+</head>
+<body>
+<div class="stars" id="stars"></div>
+<main>
+ <div class="heart">💜</div>
+ <h1>Para ti, mi niña</h1>
+ <p class="intro">Aunque estemos lejos, mi corazón está contigo.</p>
+
+ <div class="garden">
+  <div class="flower">
+   <div class="stem"></div><div class="leaf"></div>
+   <div class="bloom">
+    <i class="petal"></i><i class="petal"></i><i class="petal"></i>
+    <i class="petal"></i><i class="petal"></i><i class="petal"></i>
+    <i class="petal"></i><i class="petal"></i><i class="center"></i>
+   </div>
+  </div>
+  <div class="flower">
+   <div class="stem"></div><div class="leaf"></div>
+   <div class="bloom">
+    <i class="petal"></i><i class="petal"></i><i class="petal"></i>
+    <i class="petal"></i><i class="petal"></i><i class="petal"></i>
+    <i class="petal"></i><i class="petal"></i><i class="center"></i>
+   </div>
+  </div>
+  <div class="flower">
+   <div class="stem"></div><div class="leaf"></div>
+   <div class="bloom">
+    <i class="petal"></i><i class="petal"></i><i class="petal"></i>
+    <i class="petal"></i><i class="petal"></i><i class="petal"></i>
+    <i class="petal"></i><i class="petal"></i><i class="center"></i>
+   </div>
+  </div>
+ </div>
+
+ <section class="card">
+  <h2>Una pequeña sorpresa para ti ✨</h2>
+  <p>Preparé este rinconcito del universo solo para recordarte cuánto te quiero.</p>
+  <button id="music">♫ Escuchar melodía</button>
+  <button id="gift">🎁 Abrir mi regalo</button>
+  <div id="letter">
+Mi amor, 💗
+
+Si pudiera elegir un lugar en todo el universo,
+elegiría estar a tu lado, abrazarte y no soltarte.
+
+Aunque haya kilómetros entre nosotros,
+siempre encuentro una manera de sentirte cerquita.
+Eres esa personita que alegra mis días
+y hace que vuelva a creer en lo bonito del amor.
+
+Estas flores son para ti, porque mereces
+cosas bonitas hoy y todos los días.
+
+Te mando un abrazo enorme, muchos besitos
+y todo el amor que cabe en mi corazón.
+
+Con mucho amor, tu novio. 💜
+  </div>
+ </section>
+ <footer>Hecho con amor, pensando en ti. ♡</footer>
+</main>
+<script>
+const sky=document.getElementById('stars');
+for(let i=0;i<100;i++){
+ const s=document.createElement('i');s.className='star';
+ s.style.left=Math.random()*100+'%';
+ s.style.top=Math.random()*100+'%';
+ s.style.width=s.style.height=(1+Math.random()*3)+'px';
+ s.style.animationDelay=Math.random()*3+'s';
+ sky.appendChild(s);
+}
+document.getElementById('gift').onclick=()=>{
+ const letter=document.getElementById('letter');
+ letter.style.display=letter.style.display==='block'?'none':'block';
+ document.getElementById('gift').textContent=
+ letter.style.display==='block'?'💝 Cerrar mi regalo':'🎁 Abrir mi regalo';
+};
+let ctx=null,playing=false,timer=null,step=0;
+const notes=[261.63,329.63,392,329.63,293.66,349.23,392,349.23,
+ 261.63,329.63,440,392,349.23,329.63,293.66,261.63];
+function playNote(){
+ if(!playing||!ctx)return;
+ const osc=ctx.createOscillator(),gain=ctx.createGain();
+ osc.type='sine';osc.frequency.value=notes[step%notes.length];
+ gain.gain.setValueAtTime(0.0001,ctx.currentTime);
+ gain.gain.exponentialRampToValueAtTime(.09,ctx.currentTime+.04);
+ gain.gain.exponentialRampToValueAtTime(.0001,ctx.currentTime+.48);
+ osc.connect(gain);gain.connect(ctx.destination);
+ osc.start();osc.stop(ctx.currentTime+.5);
+ step++;timer=setTimeout(playNote,480);
+}
+document.getElementById('music').onclick=async()=>{
+ if(!ctx)ctx=new(window.AudioContext||window.webkitAudioContext)();
+ if(ctx.state==='suspended')await ctx.resume();
+ playing=!playing;
+ document.getElementById('music').textContent=
+ playing?'Ⅱ Pausar melodía':'♫ Escuchar melodía';
+ clearTimeout(timer);
+ if(playing)playNote();
+};
+</script>
+</body>
+</html>
